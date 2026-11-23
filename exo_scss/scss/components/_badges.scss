@@ -1,0 +1,21 @@
+
+.badges {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.badge {
+  background: $color-card-light;
+  border: 1px solid $color-border;
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 10px;
+  font-weight: bold;
+  color: $color-text;
+}
+
+.badge-level {
+  color: $color-secondary;
+  border-color: $color-secondary;
+}

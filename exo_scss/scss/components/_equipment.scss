@@ -1,0 +1,29 @@
+
+.equipment {
+  ul {
+    list-style: none;
+  }
+
+  li {
+    padding: 11px 13px;
+    margin-bottom: 9px;
+
+    background: $color-card;
+    border: 1px solid $color-border;
+    border-radius: $radius-small;
+
+    color: $color-text;
+    font-size: 13px;
+
+    &::before {
+      content: "+";
+      color: $color-primary;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+
+    &:hover {
+      border-color: $color-primary;
+    }
+  }
+}

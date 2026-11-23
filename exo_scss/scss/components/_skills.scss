@@ -1,0 +1,37 @@
+
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: $color-card-light;
+  border: 1px solid $color-border;
+  border-left: 3px solid $color-primary;
+
+  padding: 13px;
+  margin-bottom: 10px;
+  border-radius: $radius-small;
+
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: #303c2e;
+  }
+
+  .skill-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 34px;
+    height: 34px;
+
+    background: #394733;
+    color: $color-secondary;
+    border-radius: 50%;
+  }
+
+  h3 {
+    margin-bottom: 4px;
+  }
+}

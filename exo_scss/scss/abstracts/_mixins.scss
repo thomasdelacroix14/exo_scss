@@ -1,0 +1,49 @@
+
+// Centrer un élément avec Flexbox
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Créer une carte
+@mixin card-style(
+  $background: $color-card,
+  $border: $color-border,
+  $radius: $radius-card
+) {
+  background: $background;
+  border: 1px solid $border;
+  border-radius: $radius;
+}
+
+// Créer une barre de progression
+@mixin progress-bar($color, $height: 7px) {
+  height: $height;
+  background: $color;
+  border-radius: 10px;
+}
+
+// Effet au survol
+@mixin hover-effect($color: $color-primary) {
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: $color;
+    background: $color-card-light;
+  }
+}
+
+// Responsive mobile
+@mixin mobile {
+  @media (max-width: 650px) {
+    @content;
+  }
+}
+
+// Responsive tablette
+@mixin tablet {
+  @media (max-width: 900px) {
+    @content;
+  }
+}

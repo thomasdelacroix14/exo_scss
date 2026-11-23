@@ -1,4 +1,6 @@
 
+@use '../abstracts/variables' as *;
+
 .badges {
   display: flex;
   gap: 8px;

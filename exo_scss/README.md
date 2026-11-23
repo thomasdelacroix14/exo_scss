@@ -1,9 +1,9 @@
 # Survival Card
 
-Projet Vite avec une architecture SCSS. Les fichiers dans `scss/` sont prets a
-accueillir les styles de la carte ; `scss/main.scss` les rassemble et est
-importe par `src/main.js`. La page et les styles de demonstration Vite restent
-en place en attendant la creation de la carte.
+Projet Vite avec une architecture SCSS. Le fichier `scss/main.scss` rassemble
+les styles de la carte et est lie depuis `index.html`. Vite compile le SCSS
+en CSS : utilisez le serveur de developpement plutot que d'ouvrir le fichier
+HTML directement.
 
 ```powershell
 npm.cmd install

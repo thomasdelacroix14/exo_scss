@@ -1,13 +1,171 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>exo_scss</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survival Card</title>
+  <link rel="stylesheet" href="./scss/main.scss">
+</head>
+<body>
+
+  <main class="survival-card">
+
+    <!-- IDENTITE -->
+    <header class="character-header">
+      <div class="avatar">EW</div>
+
+      <div class="identity">
+        <h1>Thomas Delacroix</h1>
+        <p class="role">ÉCLAIREUR / SURVIVANT</p>
+
+        <div class="badges">
+          <span class="badge badge-level">NIVEAU 5</span>
+          <span class="badge">VÉTÉRAN</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- FACTION -->
+    <section class="faction">
+      <div class="faction-icon">✚</div>
+      <div>
+        <small>GROUPE D'APPARTENANCE</small>
+        <h3>Les Derniers Remparts</h3>
+      </div>
+      <span class="status">ACTIF</span>
+    </section>
+
+    <!-- RESSOURCES -->
+    <section class="resources">
+      <div class="resource">
+        <div class="resource-info">
+          <span>POINTS DE VIE</span>
+          <span>100 / 100</span>
+        </div>
+        <div class="progress">
+          <div class="progress-fill health" style="width: 100%"></div>
+        </div>
+      </div>
+
+      <div class="resource">
+        <div class="resource-info">
+          <span>ÉNERGIE</span>
+          <span>70 / 100</span>
+        </div>
+        <div class="progress">
+          <div class="progress-fill energy"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESCRIPTION -->
+    <section class="description">
+      <p>
+        Survivant aguerri et expert dans l'art des pièges, il verrouille chaque
+        accès pour transformer la moindre zone en forteresse imprenable.
+      </p>
+    </section>
+
+    <!-- COMPETENCES ET EQUIPEMENT -->
+    <section class="character-details">
+
+      <div class="skills">
+        <h2>COMPÉTENCES</h2>
+
+        <article class="skill">
+          <span class="skill-icon">⌖</span>
+          <div>
+            <h3>Bricoleur</h3>
+            <p>Permet de récupérer plus de matériaux lors de fouilles ou de démontage de pièces.</p>
+          </div>
+        </article>
+
+        <article class="skill">
+          <span class="skill-icon">⚒</span>
+          <div>
+            <h3>Ombre</h3>
+            <p>Fait 50 % moins de bruit lorsqu'il se déplace.</p>
+          </div>
+        </article>
+
+        <article class="skill">
+          <span class="skill-icon">✚</span>
+          <div>
+            <h3>Saboteur</h3>
+            <p>Désamorce et récupère les pièges ennemis, et peut piéger n'importe quel objet (portes, coffres, cadavres) en quelques secondes.</p>
+          </div>
+        </article>
+
+        <article class="skill">
+          <span class="skill-icon">⚔</span>
+          <div>
+            <h3>Sixième sens</h3>
+            <p>Repère instantanément les embuscades, les accès cachés et les mouvements derrière les murs à courte portée. Impossible à prendre par surprise.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="equipment">
+        <h2>ÉQUIPEMENT</h2>
+
+        <ul>
+          <li>Lampe torche</li>
+          <li>Fusil à pompe</li>
+          <li>Kit de secours</li>
+          <li>Kit de piège</li>
+          <li>Couteau de chasse</li>
+          <li>Pistolet silencieux</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- STATISTIQUES -->
+    <section class="statistics">
+      <h2>STATISTIQUES</h2>
+
+      <div class="stats-grid">
+        <div class="stat">
+          <span>DISCRÉTION / INFILTRATION</span>
+          <div class="progress">
+            <div class="progress-fill stat-fill" style="width: 60%"></div>
+          </div>
+          <small>60</small>
+        </div>
+
+        <div class="stat">
+          <span>INGÉNIOSITÉ</span>
+          <div class="progress">
+            <div class="progress-fill stat-fill" style="width: 90%"></div>
+          </div>
+          <small>90</small>
+        </div>
+
+        <div class="stat">
+          <span>RÉFLEXES</span>
+          <div class="progress">
+            <div class="progress-fill stat-fill" style="width: 85%"></div>
+          </div>
+          <small>85</small>
+        </div>
+
+        <div class="stat">
+          <span>ENDURANCE</span>
+          <div class="progress">
+            <div class="progress-fill stat-fill" style="width: 45%"></div>
+          </div>
+          <small>45</small>
+        </div>
+      </div>
+    </section>
+
+    <footer class="card-footer">
+      <span>IDENTIFICATION : SURV-025</span>
+      <span>ZONE : SECTEUR 07</span>
+    </footer>
+
+  </main>
+
+</body>
 </html>

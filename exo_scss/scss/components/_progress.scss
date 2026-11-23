@@ -1,4 +1,6 @@
 
+@use '../abstracts/variables' as *;
+
 .resource-info {
   display: flex;
   justify-content: space-between;
@@ -21,7 +23,7 @@
 }
 
 .health {
-  width: 85%;
+  width: 100%;
   background: $color-success;
 }
 

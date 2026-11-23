@@ -1,4 +1,6 @@
 
+@use 'variables' as *;
+
 // Centrer un élément avec Flexbox
 @mixin flex-center {
   display: flex;

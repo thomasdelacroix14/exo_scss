@@ -34,4 +34,28 @@
 
 .stat-fill {
   background: $color-primary;
+  transform-origin: left;
+  animation: fill-stat 0.7s ease-out backwards;
+}
+
+@for $i from 1 through 4 {
+  .stat:nth-child(#{$i}) .stat-fill {
+    animation-delay: ($i - 1) * 0.15s;
+  }
+}
+
+@keyframes fill-stat {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stat-fill {
+    animation: none;
+  }
 }

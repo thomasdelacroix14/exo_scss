@@ -9,13 +9,17 @@
 
 body {
   min-height: 100vh;
+  max-width: 1680px;
+  margin: 0 auto;
   background: $color-background;
   color: $color-text;
   font-family: $font-main;
 
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+  grid-auto-rows: 1fr;
+  gap: 20px;
   justify-content: center;
-  align-items: center;
 
   padding: 40px 20px;
 }

@@ -14,6 +14,14 @@ $color-muted: #929c8b;
 
 $color-border: #394536;
 
+$equipment-rarities: (
+  common: #aab4a5,
+  uncommon: #81b46f,
+  rare: #72a8d1,
+  epic: #b995d6,
+  legendary: #e2b45e
+);
+
 $font-main: "Arial", sans-serif;
 
 $radius-card: 12px;

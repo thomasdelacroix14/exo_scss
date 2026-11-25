@@ -28,4 +28,18 @@
       border-color: $color-primary;
     }
   }
+
+  @each $rarity, $color in $equipment-rarities {
+    .rarity-#{$rarity} {
+      border-left: 3px solid $color;
+
+      &::before {
+        color: $color;
+      }
+
+      &:hover {
+        border-color: $color;
+      }
+    }
+  }
 }
